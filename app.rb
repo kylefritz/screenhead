@@ -26,7 +26,7 @@ post "/launch" do
 end
 
 post "/text" do
-    text=params[:text]
+    text=params["text"]
     REDIS.rpush "screenhead:text", text
 end
 
