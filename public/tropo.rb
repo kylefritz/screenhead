@@ -4,7 +4,7 @@ text=$currentCall.initialText
 
 say "ok, #{text} comming right up..."
 
-http = Net::HTTP.new('screenhead.herokuapp.com')
+http = Net::HTTP.new('screenhead.heroku.com')
 
 http.post "/text" , {:text=> text }
 
